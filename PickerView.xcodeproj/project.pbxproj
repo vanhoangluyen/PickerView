@@ -12,6 +12,7 @@
 		5631020B1FCCF94600EC7C9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 563102091FCCF94600EC7C9F /* Main.storyboard */; };
 		5631020D1FCCF94600EC7C9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5631020C1FCCF94600EC7C9F /* Assets.xcassets */; };
 		563102101FCCF94600EC7C9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5631020E1FCCF94600EC7C9F /* LaunchScreen.storyboard */; };
+		56E0F0A11FCF7AD400BB771E /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E0F0A01FCF7AD400BB771E /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5631020C1FCCF94600EC7C9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5631020F1FCCF94600EC7C9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		563102111FCCF94600EC7C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56E0F0A01FCF7AD400BB771E /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				563102051FCCF94600EC7C9F /* AppDelegate.swift */,
 				563102071FCCF94600EC7C9F /* ViewController.swift */,
 				563102091FCCF94600EC7C9F /* Main.storyboard */,
+				56E0F0A01FCF7AD400BB771E /* DetailVC.swift */,
 				5631020C1FCCF94600EC7C9F /* Assets.xcassets */,
 				5631020E1FCCF94600EC7C9F /* LaunchScreen.storyboard */,
 				563102111FCCF94600EC7C9F /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				563102081FCCF94600EC7C9F /* ViewController.swift in Sources */,
 				563102061FCCF94600EC7C9F /* AppDelegate.swift in Sources */,
+				56E0F0A11FCF7AD400BB771E /* DetailVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

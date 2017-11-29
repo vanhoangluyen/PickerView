@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
 
-    var colors = [["Red", "Green", "Blue", "Yellow","Gray", "Pink","White","Orange","Black","Brown","Beige","Violet","Purple","Dark green","Dark blue","Light brown","Light green"],["1","2","3","4","5","6","7","8","9","10"],["A","B","C","D","E","F","G","H","I","k"]]
+    var colors = ["Red", "Green", "Blue", "Yellow","Gray", "Pink","White","Orange","Black","Brown","Beige","Violet","Purple","Dark green","Dark blue","Light brown","Light green"]
+    var dataPicker: String?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,30 +23,25 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         // Dispose of any resources that can be recreated.
     }
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 3
+        return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return colors[component].count
+        return colors.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return colors[component][row]
+        return colors[row]
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        if row == 0 {
-            self.view.backgroundColor = UIColor.red
-        } else if row == 1 {
-            self.view.backgroundColor = UIColor.yellow
-        } else if row == 2 {
-            self.view.backgroundColor = UIColor.green
-        } else {
-            self.view.backgroundColor = UIColor.blue
-        }
+        dataPicker = colors[row]
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDetail" {
-            
+            if let data = dataPicker {
+                let controller = segue.destination as! DetailVC
+                controller.getData = data
+            }
         }
     }
 }
